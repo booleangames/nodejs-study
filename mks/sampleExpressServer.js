@@ -20,4 +20,6 @@ app.listen(3000, () => {
   console.log('start listen...');
 });
 
-dbManager.DoQuery("SELECT * FROM gb_char WHERE char_name = 'tdread1'");
+dbManager.SelectCharInfoWhereCharName('tdread1');
+
+dbManager.DBDisconnect();
